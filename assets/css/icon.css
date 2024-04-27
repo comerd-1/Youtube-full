@@ -1,0 +1,83 @@
+.icon{
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-lg{
+    width: 24px;
+    height: 24px;
+}
+
+.icon-arrow-down{
+    background-image: url(../icons/arrow-down.svg);
+}
+
+.icon-arrow-right{
+    background-image: url(../icons/arrow-right.svg);
+}
+
+.icon-bell{
+    background-image: url(../icons/bell.svg);
+}
+
+.icon-explorer{
+    background-image: url(../icons/explorer.svg);
+}
+
+.icon-history{
+    background-image: url(../icons/history.svg);
+}
+
+.icon-home{
+    background-image: url(../icons/home.svg);
+}
+
+.icon-library{
+    background-image: url(../icons/library.svg);
+}
+
+.icon-like{
+    background-image: url(../icons/like.svg);
+}
+
+.icon-menu{
+    background-image: url(../icons/menu.svg);
+}
+
+.icon-menubar{
+    background-image: url(../icons/menubar.svg);
+}
+
+.icon-search{
+    background-image: url(../icons/search.svg);
+}
+
+.icon-short{
+    background-image: url(../icons/short.svg);
+}
+
+.icon-subscript{
+    background-image: url(../icons/subscript.svg);
+}
+
+.icon-vatch{
+    background-image: url(../icons/vatch.svg);
+}
+
+.icon-creit{
+    background-image: url(../icons/creit.svg);
+}
+
+.icon-voic{
+    background-image: url(../icons/voic.svg);
+}
+
+.icon-yourvideo{
+    background-image: url(../icons/yourvideo.svg);
+}

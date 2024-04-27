@@ -1,0 +1,462 @@
+body{
+    background-color: #181818;
+    color: #fff;
+}
+
+
+.page{
+   height: 100%;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+
+.menu-checkbox{
+    display: none;
+}
+
+
+
+.page-left{
+    width: 60px;
+    height: 100%;
+    background-color: #212121;
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    
+
+
+   
+    .top{
+        display: flex;
+        padding: 16px 20px;
+        align-items: center;
+        overflow: hidden;
+
+        .icon{
+            margin-right: 18px;
+            cursor: pointer;
+        }
+        
+    }
+
+    .navbar{  
+        padding-bottom: 50px;
+    
+        .nav-link{
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+            height: 38px;
+            color: #fff;
+            position: relative;
+            padding-right: 26px;
+            z-index: 1;
+
+            
+            .icon{
+                margin-right: 18px;
+                flex-shrink: 0;
+            }
+    
+            .nokte{
+                width: 4px;
+                height: 4px;
+                background-color: #3da6ff;
+                display: inline-block;
+                border-radius: 50%;
+                position: absolute;
+                right: 14px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    
+        .nav-title{
+            padding-left: 20px;
+            color: #aaa;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 15px;
+            margin-bottom: 8px;
+        }
+    
+        .nav-link.active{
+            background-color: #383838;
+            border-radius: 8px;
+        }
+        .nav-link:hover{
+            background-color: #969292;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+
+
+.page-right{
+    padding: 20px;
+    padding-left: 70px;
+
+
+    .page-header{
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 32px 7px 0;
+        position: fixed;
+        left: 70px;
+        right: 0;
+        top: 0;
+        background-color: #181818;
+    
+        .search-content{
+            display: flex;
+            align-items: center;
+            flex-grow: 2;
+            justify-content: center;
+
+            .voic{
+                padding-left: 16px;
+            }
+        }
+    
+        .search{
+            border: 3px solid #323232;
+            width: 500px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            border-radius: 6px;
+    
+            input{
+                flex-grow: 1;
+                height: 100%;
+                padding: 6px;
+                color: #fff;
+            }
+    
+            input::placeholder{
+                color: #aaa;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
+    
+            .search-icon{
+                background-color: #323232;
+                height: 36px;
+                padding: 0 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    
+        .butons{
+            flex-grow: 1;
+            display: flex;
+            margin-top: -30px;
+            align-items: center;
+            justify-content: flex-end;
+    
+    
+            .button{
+                width: 24px;
+                height: 24px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .dropdown{
+                margin-left: 24px;
+                position: relative;
+    
+    
+                .profil{
+                    width: 28px;
+                    height: 28px;
+                    flex-shrink: 0;
+                    cursor: pointer;
+                }
+    
+                .dropdown-content{
+                    position: absolute;
+                    background-color: #212121;
+                    top: 100%;
+                    right: 0;
+                    padding-top: 16px;
+                    width: 300px;
+                    padding: 16px;
+                    border-radius: 16px;
+                    padding-bottom: 50px;
+                    opacity: 0;
+                    visibility: hidden;
+    
+                    .nav-link{
+                        display: flex;
+                        padding-left: 20px;
+                        align-items: center;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: #fff;
+    
+                        .icon{
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 20px;
+                            flex-shrink: 0;
+                        }
+                
+                    }
+                   
+        
+                    .link{
+                        display: flex;
+                        padding-left: 20px;
+                        align-items: center;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: #fff; 
+                        column-gap: 16px; 
+                        
+                        .span{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+    
+                    .link i{
+                        width: 20px;
+                        height: 20px;
+                    }
+        
+                    .link:hover{
+                        background-color: #323232;
+                        border-radius: 8px;
+                    }
+                }
+            }
+    
+            .dropdown input[type="checkbox"]{
+                display: none;
+            }
+         
+    
+            .dropdown:has(:checked) .dropdown-content{
+                opacity: 1;
+                visibility: visible;
+            }
+    
+        } 
+
+
+        .header{
+            width: 100%;
+            background-color: #181818;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #383838;
+            padding: 10px;
+            padding-left: 14px;
+            border-bottom: 1px solid #383838;
+            cursor: pointer;
+            margin-top: 14px;
+            overflow: auto;
+            
+    
+            .hed .arrow{
+                width: 70px;
+                height: 50px;
+                display: flex;
+                top: 58px;
+                right: 0;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                background: linear-gradient(270deg, #121212 67.19%, rgba(33, 33, 33, 0) 100%);
+            }
+    
+            .category{
+                background-color: #383838;
+                border: 1px solid #474747;
+                border-radius: 25px;
+                padding: 8px 12px 8px 12px;
+                white-space: nowrap;
+                justify-content: center;
+                cursor: pointer;
+                margin-right: 12px;
+                color: #ffffff;
+            }
+    
+            .category.active{
+                background-color: #ffffff;
+                color: #000000;
+            }
+            .category:hover{
+                background-color: #969292;
+                color: #000000;
+            }
+            
+        }
+        
+        .butons button:not(:first-child){
+            margin-left: 20px;
+        }
+
+
+
+        
+    }
+
+    
+   
+
+    .page-content{
+        display: grid;
+        margin-left: 5px;
+        margin-top: 130px;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 14px;
+        row-gap: 35px;
+
+
+       
+
+        
+       .video-box{
+           display: flex;
+           width: 100%;
+        }
+
+        .video-details{
+           display: flex;
+           color: #ffffff;
+           padding-top: 12px;
+
+
+            .channel-logo{
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              overflow: hidden;
+            }
+        }
+
+        .detail{
+            margin-left: 10px;
+
+            .channel-name{
+                margin-top: 7px;
+            }
+
+            .wiews-upload{
+                display: flex;
+            }
+
+            .wiews-upload .nokte{
+                width: 4px;
+                height: 4px;
+                background-color: #AAAAAA;
+                display: flex;
+                border-radius: 50%;
+                right: 14px;
+                padding: 0;
+                top: 0px;
+                bottom: 0;
+                margin-left: 5px;
+                margin-top: 7px;
+                margin-right: 5px;
+            }
+        }
+    }
+    
+}
+
+
+
+.page:has(:not(.menu-checkbox:checked)) .navbar .nav-link span{
+    position: absolute;
+    left: calc(100% + 8px);
+    display: inline-flex;
+    color: #fff;
+    height: 30px;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #282828;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+
+.page:has(.menu-checkbox:checked) .navbar .nav-link span{
+    position: initial;
+    opacity: 1;
+    visibility: visible;
+    background: transparent;
+    padding: 0;
+}
+
+
+.page:has(:not(.menu-checkbox:checked)) .navbar .nav-link:hover > span{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.page:has(.menu-checkbox:checked) .page-content{
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: -25px;
+}
+
+
+.page:has(.menu-checkbox:checked) .page-left{
+    width: 220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.page:has(.menu-checkbox:checked) .navbar{
+    padding-right: 20px;
+}
+
+
+.page:has(.menu-checkbox:checked) .page-right{
+    padding-left: 230px;
+}
+
+
+.page:has(.menu-checkbox:checked) .page-header{
+    left: 230px;
+}
+
+
+.page:has(.menu-checkbox:checked) .Subscript{
+    display: block;
+}
+
+
+.Subscript{
+    display: none;
+}
+
+
+p{
+    margin-top: 20px;
+}
