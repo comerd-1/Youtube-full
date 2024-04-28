@@ -330,7 +330,7 @@ html, body{
         margin-left: 5px;
         margin-top: 130px;
         margin-bottom: 20px;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         column-gap: 14px;
         row-gap: 35px;
 
