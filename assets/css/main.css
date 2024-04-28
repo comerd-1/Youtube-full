@@ -203,6 +203,7 @@ html, body{
                     padding-bottom: 50px;
                     opacity: 0;
                     visibility: hidden;
+                    z-index: 5;
     
                     .nav-link{
                         display: flex;
